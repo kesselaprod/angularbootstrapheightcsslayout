@@ -41,6 +41,8 @@ Given the following DOM structure:
 </footer>
 ```
 
+![angularbootstraplayout](https://raw.githubusercontent.com/kesselaprod/angularbootstrapheightcsslayout/master/images/angular_bootstrap_layout.png)
+
 Now we define the height and position of our elements to form a classic **header - content (main > section > nav, article, aside) - footer** html 5 layout without a wrapper. The special feature here is the **footer** will always stick to the bottom and the **article column** will fill the remaining height regardless of the content or screen size. For this to happen we need to give the **header** and **footer** a fixed height and subtract the total pixel size from the proper value (```100vh/100%```). We also need to make sure our **footer** has a ```position: relative;``` and our **main** and **article** have both definitions for ```min-height``` (plus an additional ```height``` definition for **article** to fit the content size.)
 
 Don't mind the interpolation placeholders ```{{ title }} {{ testvar }}``` they are only necessary if you are interested in angular app development.
@@ -71,3 +73,6 @@ footer {
     bottom:0;
 }
 ```
+![angularbootstraplayoutextended1](https://github.com/kesselaprod/angularbootstrapheightcsslayout/blob/master/images/angular_bootstrap_layout_extended_1.png?raw=true)
+
+![angularbootstraplayoutextended2](https://github.com/kesselaprod/angularbootstrapheightcsslayout/blob/master/images/angular_bootstrap_layout_extended_2.png?raw=true)
