@@ -1,0 +1,24 @@
+
+html, body {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+}
+
+main {
+    min-height: calc(100% - 250px);
+}
+
+
+article {
+    height: calc(100% - 250px);
+    min-height: calc(100vh - 250px);
+}
+
+footer {
+    height: 150px;
+    position:relative; 
+    bottom:0;
+}
